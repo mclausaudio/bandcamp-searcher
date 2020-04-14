@@ -1,5 +1,5 @@
 {
-	"name": "bc-searcher",
+	"name": "bandcamp-searcher",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
