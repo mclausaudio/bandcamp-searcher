@@ -1,36 +1,22 @@
 {
-  "name": "Chrome extension experiments",
-  "version": "1.0.0",
-  "description": "Sandbox",
-  "manifest_version": 2,
-  "background": {
-    "scripts": [
-      "background.js",
-      "backgroundMessaging.js"
-    ],
-    "persistent": false
-  },
-  "browser_action": {
-    "default_title": "Michael's extension",
-    "default_popup": "popup.html"
-  },
-  "content_scripts": [
-    {
-      "js": [
-        "content.js",
-        "contentMessaging.js"
-      ],
-      "matches": [
-        "https://*.soundcloud.com/*"
-      ],
-      "exclude_matches": [
-        "https://*.soundcloud.com/*/stats"
-      ],
-      "run_at": "document_end"
-    }
-  ],
-  "permissions": [
-    "bookmarks",
-    "tabs"
-  ]
+	"name": "Chrome extension experiments",
+	"version": "1.0.0",
+	"description": "Sandbox",
+	"manifest_version": 2,
+	"background": {
+		"scripts": ["background.js", "backgroundMessaging.js"],
+		"persistent": false
+	},
+	"browser_action": {
+		"default_title": "Bandcamp search for Soundcloud",
+		"default_popup": "popup.html"
+	},
+	"content_scripts": [
+		{
+			"js": ["content.js", "contentMessaging.js"],
+			"matches": ["https://*.soundcloud.com/*"],
+			"run_at": "document_end"
+		}
+	],
+	"permissions": ["storage", "tabs"]
 }
