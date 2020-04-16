@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title>Bandcamp search for SoundCloud</title>
-		<!-- <link rel="stylesheet" href="stylesheet.css" type="text/css"> -->
+		<link rel="stylesheet" href="popup.css" type="text/css" />
 	</head>
 	<body>
 		<h1>Bandcamp search for SoundCloud</h1>
@@ -21,9 +21,14 @@
 		<script src="popup.js"></script>
 
 		<section>
-			<h3>Search history</h3>
+			<h3>Recent search history</h3>
+			<div>
+				<button>View more</button>
+				<button id="clearHistory">Clear history</button>
+			</div>
 			<div id="history">
-				<p>Hi</p>
+				<p>No current user history &#128532;</p>
+				<p>Try making a search</p>
 			</div>
 		</section>
 	</body>
