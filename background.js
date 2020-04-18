@@ -5,3 +5,5 @@
 // chrome.bookmarks.onCreated.addListener(() => {
 //   alert('Bookmark created ')
 // })
+
+console.log("HELLO");

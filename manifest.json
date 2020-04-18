@@ -18,5 +18,10 @@
 			"run_at": "document_end"
 		}
 	],
-	"permissions": ["storage", "tabs"]
+	"permissions": ["storage", "tabs"],
+	"icons": {
+		"16": "soundcloud.png",
+		"24": "soundcloud.png",
+		"32": "soundcloud.png"
+	}
 }

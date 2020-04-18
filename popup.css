@@ -1,3 +1,11 @@
 body {
 	width: 600px;
 }
+
+#errorContainer {
+	display: block;
+}
+
+#searchControls {
+	display: none;
+}

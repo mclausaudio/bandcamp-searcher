@@ -1,8 +1,8 @@
+window.currentURL = "this is a url from background";
+
 chrome.runtime.onMessage.addListener((req, sender, res) => {
 	// Open new tab with Bandcamp search URL
-	console.log(req.searchTerm);
 	let searchTerm = req.searchTerm.replace(/[^A-Za-z0-9 ]/g, "");
-	console.log(searchTerm);
 	// openBandcampSearch(searchTerm);
 });
 
@@ -11,3 +11,7 @@ const openBandcampSearch = (term) => {
 		url: `https://bandcamp.com/search?q=${term}`,
 	});
 };
+
+// chrome.browserAction.onClicked.addListener((tab) => {
+// 	chrome.tabs.create({ url: "tabInfo.html" });
+// });

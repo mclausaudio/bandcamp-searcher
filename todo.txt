@@ -1,0 +1,3 @@
+[ ] - Change / Disable popup.html when not on soundcloud
+[ ] - 'View more' tab for history / about
+[ ] - Style popup

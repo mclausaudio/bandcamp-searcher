@@ -16,9 +16,18 @@
 
 		<h2>Support independent music!</h2>
 
-		<button id="username">Search by Username</button>
-		<button id="trackTitle">Search by track title</button>
-		<script src="popup.js"></script>
+		<div id="errorContainer">
+			<p>Something went wrong and you can't search :/</p>
+			<p>
+				Make sure you're on soundcloud and have something loaded into
+				the player
+			</p>
+		</div>
+
+		<div id="searchControls">
+			<button id="username">Search by Username</button>
+			<button id="trackTitle">Search by track title</button>
+		</div>
 
 		<section>
 			<h3>Recent search history</h3>
@@ -26,10 +35,9 @@
 				<button>View more</button>
 				<button id="clearHistory">Clear history</button>
 			</div>
-			<div id="history">
-				<p>No current user history &#128532;</p>
-				<p>Try making a search</p>
-			</div>
+			<div id="history"></div>
 		</section>
+
+		<script src="popup.js"></script>
 	</body>
 </html>

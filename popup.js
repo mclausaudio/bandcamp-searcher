@@ -1,20 +1,36 @@
 document.addEventListener(
 	"DOMContentLoaded",
 	function () {
+		// Make sure you're on SoundCloud
+		chrome.tabs.query({ active: true, currentWindow: true }, function (
+			tabs
+		) {
+			var currentTab = tabs[0];
+			if (currentTab.url.includes("soundcloud")) {
+				document.getElementById("searchControls").style.display =
+					"block";
+				document.getElementById("errorContainer").style.display =
+					"none";
+			}
+		});
 		// Check history on load, if there is data load it to DOM
+
 		populateHistory("history");
+		const bg = chrome.extension.getBackgroundPage();
+		console.log(bg.currentURL);
+		console.log(bg);
 
 		document.getElementById("username").addEventListener(
 			"click",
 			() => {
-				onclick("trackTitle");
+				onclick("username");
 			},
 			false
 		);
 		document.getElementById("trackTitle").addEventListener(
 			"click",
 			() => {
-				onclick("username");
+				onclick("trackTitle");
 			},
 			false
 		);

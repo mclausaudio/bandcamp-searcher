@@ -20,15 +20,7 @@ chrome.runtime.onMessage.addListener((req, sender, res) => {
 	});
 });
 
-// window.onload = () => {
-//   const button = document.createElement('button');
-//   button.id = "button";
-//   button.textContent = "Make dark"
-//   document.querySelector('.header__left').append(button)
-
-//   button.addEventListener('click', () => changeStyles())
-// }
-
+console.log("content");
 // function changeStyles() {
 //   document.getElementById('content').style.backgroundColor = "black"
 
