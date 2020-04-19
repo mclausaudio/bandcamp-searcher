@@ -3,41 +3,94 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title>Bandcamp search for SoundCloud</title>
-		<link rel="stylesheet" href="popup.css" type="text/css" />
+		<link
+			rel="stylesheet"
+			href="styles/bootstrap.min.css"
+			type="text/css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link rel="stylesheet" href="styles/popup.css" type="text/css" />
+		<link rel="stylesheet" href="styles/global.css" type="text/css" />
 	</head>
 	<body>
-		<h1>Bandcamp search for SoundCloud</h1>
-
-		<p>
-			Search Bandcamp for what you are currently listening to on
-			Soundcloud by Username or track title. Based on the meta data on
-			SoundClouds footer player.
-		</p>
-
-		<h2>Support independent music!</h2>
-
-		<div id="errorContainer">
-			<p>Something went wrong and you can't search :/</p>
-			<p>
-				Make sure you're on soundcloud and have something loaded into
-				the player
-			</p>
-		</div>
-
-		<div id="searchControls">
-			<button id="username">Search by Username</button>
-			<button id="trackTitle">Search by track title</button>
-		</div>
-
 		<section>
-			<h3>Recent search history</h3>
-			<div>
-				<button>View more</button>
-				<button id="clearHistory">Clear history</button>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 mb-3">
+						<h2>Bandcamp search for SoundCloud</h2>
+						<a
+							href="index.html"
+							target="_blank"
+							class="text-decoration-none"
+							><button
+								type="button"
+								class="btn btn-outline-primary btn-sm"
+							>
+								More info &rarr;
+							</button></a
+						>
+						<a
+							href="https://paypal.me/michaeljclaus"
+							target="_blank"
+						>
+							<button
+								type="button"
+								class="btn btn-outline-success btn-sm"
+							>
+								Donate $
+							</button>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 mb-3">
+						<h4><u>Search</u></h4>
+						<div class="alert alert-danger" id="errorContainer">
+							<p class="alert-heading">
+								&#128561; Uh oh! Something went wrong &#128560;
+							</p>
+							<hr />
+							<p>
+								Make sure you're on soundcloud and have
+								something loaded into the player
+							</p>
+						</div>
+						<div id="searchControls">
+							<button id="username">Search by Username</button>
+							<button id="trackTitle">
+								Search by track title
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 mb-3">
+						<h4><u>Recent search history</u></h4>
+						<div class="mb-2">
+							<a href="index.html" target="_blank"
+								><button
+									type="button"
+									class="btn btn-outline-primary btn-sm"
+								>
+									View more
+								</button></a
+							>
+							<button
+								id="clearHistory"
+								type="button"
+								class="btn btn-outline-danger btn-sm mx-auto"
+							>
+								Clear all <i class="fa fa-trash"></i>
+							</button>
+						</div>
+						<div id="history"></div>
+					</div>
+				</div>
 			</div>
-			<div id="history"></div>
 		</section>
-
 		<script src="popup.js"></script>
 	</body>
 </html>

@@ -19,14 +19,3 @@ chrome.runtime.onMessage.addListener((req, sender, res) => {
 		searchTerm: searchTerm,
 	});
 });
-
-console.log("content");
-// function changeStyles() {
-//   document.getElementById('content').style.backgroundColor = "black"
-
-//   fetch('https://jsonplaceholder.typicode.com/todos/1')
-//     .then(res => res.json())
-//     .then(json => console.log(json))
-// }
-
-// playbackSoundBadge__title

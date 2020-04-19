@@ -16,9 +16,6 @@ document.addEventListener(
 		// Check history on load, if there is data load it to DOM
 
 		populateHistory("history");
-		const bg = chrome.extension.getBackgroundPage();
-		console.log(bg.currentURL);
-		console.log(bg);
 
 		document.getElementById("username").addEventListener(
 			"click",
@@ -103,7 +100,7 @@ document.addEventListener(
 					});
 				} else {
 					historyContainer.innerHTML =
-						"<p>No current user history &#128532;</p><p>Try making a search</p>";
+						"<div class='alert alert-secondary'><p>No current user history &#128532;</p><p>Try making a search &#128513;</p></div>";
 				}
 			});
 		}
