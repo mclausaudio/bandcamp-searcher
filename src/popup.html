@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Bandcamp search for SoundCloud</title>
+		<link
+			rel="stylesheet"
+			href="styles/bootstrap.min.css"
+			type="text/css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link rel="stylesheet" href="styles/global.css" type="text/css" />
+		<link rel="stylesheet" href="styles/popup.css" type="text/css" />
+	</head>
+	<body>
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 mb-3">
+						<h4 class="text-center mb-4">
+							<span class="bg-teal mb-0">Bandcamp</span>
+							<div class="my-2">search for</div>
+							<span class="bg-orange">SoundCloud</span>
+						</h4>
+						<div class="logo-icon-divider text-center mb-0">
+							<i class="fa fa-bandcamp"></i>
+							<i class="fa fa-soundcloud"></i>
+							<i class="fa fa-bandcamp"></i>
+							<i class="fa fa-soundcloud"></i>
+							<i class="fa fa-bandcamp"></i>
+						</div>
+						<div class="text-center">
+							<a
+								href="index.html"
+								target="_blank"
+								class="text-decoration-underline text-center"
+							>
+								More info &rarr;</a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 mb-3">
+						<h5><u>Search:</u></h5>
+						<div class="alert alert-danger" id="errorContainer">
+							<p class="alert-heading text-center">
+								&#128561;Something went wrong &#128560;
+							</p>
+							<hr />
+							<p>
+								Make sure you're on
+								<a
+									href="https://www.soundcloud.com/"
+									target="_blank"
+									>SoundCloud</a
+								>
+								and have something loaded into the player
+							</p>
+						</div>
+						<div id="searchControls">
+							<button
+								id="username"
+								type="button"
+								class="btn btn-outline-primary btn-sm"
+							>
+								By Username <i class="fa fa-user"></i>
+							</button>
+							<button
+								id="trackTitle"
+								type="button"
+								class="btn btn-outline-primary btn-sm"
+							>
+								By Track <i class="fa fa-search"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 mb-3">
+						<div class="accordion" id="accordionExample">
+							<div class="card">
+								<div class="card-header" id="headingOne">
+									<button
+										class="btn btn-link"
+										type="button"
+										data-toggle="collapse"
+										data-target="#collapseOne"
+										aria-expanded="true"
+										aria-controls="collapseOne"
+									>
+										<h5 class="mb-0">
+											<u>Recent searches</u>
+										</h5>
+									</button>
+								</div>
+
+								<div
+									id="collapseOne"
+									class="collapse"
+									aria-labelledby="headingOne"
+									data-parent="#accordionExample"
+								>
+									<div class="card-body">
+										<div class="mb-2">
+											<a href="index.html" target="_blank"
+												><button
+													type="button"
+													class="btn btn-outline-primary btn-sm"
+												>
+													View more
+												</button></a
+											>
+											<button
+												id="clearHistory"
+												type="button"
+												class="btn btn-outline-danger btn-sm mx-auto"
+											>
+												Clear all
+												<i class="fa fa-trash"></i>
+											</button>
+										</div>
+										<div id="history"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="underline mb-3"></div>
+
+			<div class="row">
+				<div class="col-12">
+					<p class="text-center">
+						Created by:
+						<a href="mailto:mclausaudio@gmail.com" target="_blank"
+							>Michael Claus</a
+						>
+						(<a href="https://www.sutrofm@gmail.com" target="_blank"
+							>SutroFM</a
+						>
+						//
+						<a
+							href="https://www.soundcloud.com/silva-electronics"
+							target="_blank"
+							>Silva Electronics</a
+						>). Leave a
+						<a
+							href="https://paypal.me/michaeljclaus"
+							target="_blank"
+							>tip $</a
+						>.
+					</p>
+				</div>
+			</div>
+		</section>
+		<script src="scripts/jquery-3.4.1.slim.min.js"></script>
+		<script src="scripts/bootstrap.min.js"></script>
+		<script src="scripts/history.js"></script>
+		<script src="scripts/search.js"></script>
+		<script src="scripts/popup.js"></script>
+	</body>
+</html>

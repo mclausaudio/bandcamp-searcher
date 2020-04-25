@@ -1,0 +1,20 @@
+body {
+	width: 300px;
+	background-color: #f4f7fb;
+}
+
+#errorContainer {
+	display: block;
+}
+
+#searchControls {
+	display: none;
+}
+
+.card {
+	width: 100%;
+}
+
+table {
+	max-width: 100%;
+}
