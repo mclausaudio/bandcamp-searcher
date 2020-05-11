@@ -1,3 +1,25 @@
-[ ] - Change / Disable popup.html when not on soundcloud
-[ ] - 'View more' tab for history / about
-[ ] - Style popup
+==================================================
+TODO:
+
+[x] - Change / Disable popup.html when not on soundcloud
+[x] - 'View more' tab for history / about
+[x] - Separate JS into separate files
+[x] - Add history functionality on 'More Info' page
+[x] - Add History Remove Buttons
+[x] - Add History Re-Search Button
+[ ] - Add "About" page
+[ ] - Add Footer section
+
+==================================================
+FUTURE TODO:
+
+[ ] - Include non-english characters like ö
+
+
+==================================================
+FUTURE FEATURES:
+
+[ ] - Sort history by most recent / creation date.
+[ ] - Star / Highlight / Save certain searches
+[ ] - Properly format times
+[ ] - Paginate history
